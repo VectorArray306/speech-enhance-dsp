@@ -1,0 +1,61 @@
+{
+  "speaker": "uaspeech:M08",
+  "adapter": "/home/srikartandulwadikar/Documents/speech_enhance_dsp/Speech_V2/dysarthric_pipeline/adapters/uaspeech_M08",
+  "steps": 160,
+  "before": {
+    "overall": {
+      "wer": 4.84,
+      "cer": 1.8,
+      "utterances": 122
+    },
+    "by_severity": {
+      "high": {
+        "wer": 4.84,
+        "cer": 1.8,
+        "utterances": 122
+      }
+    },
+    "by_corpus": {
+      "uaspeech": {
+        "wer": 4.84,
+        "cer": 1.8,
+        "utterances": 122
+      }
+    },
+    "by_condition": {
+      "dysarthric": {
+        "wer": 4.84,
+        "cer": 1.8,
+        "utterances": 122
+      }
+    }
+  },
+  "adapt_test": {
+    "overall": {
+      "wer": 4.84,
+      "cer": 1.05,
+      "utterances": 122
+    },
+    "by_severity": {
+      "high": {
+        "wer": 4.84,
+        "cer": 1.05,
+        "utterances": 122
+      }
+    },
+    "by_corpus": {
+      "uaspeech": {
+        "wer": 4.84,
+        "cer": 1.05,
+        "utterances": 122
+      }
+    },
+    "by_condition": {
+      "dysarthric": {
+        "wer": 4.84,
+        "cer": 1.05,
+        "utterances": 122
+      }
+    }
+  }
+}

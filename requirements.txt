@@ -1,0 +1,30 @@
+# Install from the repository root:
+#   python -m pip install -r requirements.txt
+#
+# PyPI supplies the CPU build of PyTorch, which runs on Windows without an NVIDIA GPU.
+# For an NVIDIA GPU, install a Windows CUDA build of torch and torchaudio from
+# https://pytorch.org/get-started/locally/ before this file, then run the command above.
+#
+# Two programs are not pip packages. Install them and add them to PATH:
+#   ffmpeg     speech/eval_wer.py (openai-whisper reads audio through ffmpeg)
+#   eSpeak NG  speech/prepare_cache.py (https://github.com/espeak-ng/espeak-ng/releases)
+
+numpy>=1.23
+scipy>=1.10
+torch>=2.2
+torchaudio>=2.2
+librosa>=0.10
+soundfile>=0.12
+pyyaml>=6
+sounddevice>=0.4.6
+pyserial>=3.5
+transformers>=4.46
+peft>=0.13
+accelerate>=0.34
+datasets>=2.19
+jiwer>=3.0
+onnxruntime>=1.17
+piper-tts>=1.2.0
+matplotlib>=3.7
+tensorboard>=2.14
+openai-whisper>=20231117

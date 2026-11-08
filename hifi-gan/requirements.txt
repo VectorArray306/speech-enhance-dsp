@@ -1,0 +1,10 @@
+# Modern pins that install on Windows. The original HiFi-GAN pins (torch 1.4)
+# have no wheels for current Python. The repository root requirements.txt
+# is the full set used by this project.
+torch>=2.2
+numpy>=1.23
+librosa>=0.10
+scipy>=1.10
+tensorboard>=2.14
+soundfile>=0.12
+matplotlib>=3.7

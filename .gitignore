@@ -1,0 +1,16 @@
+.cursor/
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# GitHub rejects files larger than 100 MB. These EMG checkpoints are about 129 MB.
+sEMG/training_and_validations/UNet_train_v3/*.pt
+sEMG/training_and_validations/UNet_train_v4/*.pt
+sEMG/training_and_validations/fine_tune_layer/*.pt
+sEMG/training_and_validations/ft_lr_1e-4/*.pt
+sEMG/training_and_validations/ft_lr_1e-5/*.pt
+sEMG/training_and_validations/ft_lr_3e-4/*.pt
+sEMG/training_and_validations/ft_lr_3e-5/*.pt
+sEMG/training_and_validations/short_speech_train/*.pt
+sEMG/training_and_validations/test_fine_tune_layer/*.pt

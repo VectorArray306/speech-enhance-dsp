@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dysarthric-pipeline"
+version = "0.1.0"
+description = "Real-time dysarthric speech to text and voice."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pyyaml",
+    "soundfile",
+    "torch",
+    "torchaudio",
+]
+
+[project.optional-dependencies]
+train = [
+    "accelerate",
+    "datasets",
+    "jiwer",
+    "peft",
+    "transformers",
+]
+runtime = [
+    "onnxruntime",
+    "piper-tts",
+    "pyserial",
+    "sounddevice",
+]
+
+[project.scripts]
+dysarthric-pipeline = "dysarthric_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dysarthric_pipeline*"]
+
+[tool.setuptools.package-data]
+dysarthric_pipeline = ["configs/*.yaml", "data/*.json"]

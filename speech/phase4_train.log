@@ -1,0 +1,43 @@
+phase4 2026-10-20T10:20:42+05:30
+train_rows=933 val_rows=519 residual=True gated=True target_mode=active_control max_frames=1600
+epoch 1 train_l1 0.3991 val_l1 0.3232 val_identity_l1 0.0316 val_gate 0.522 val_score 0.3342
+epoch 2 train_l1 0.3886 val_l1 0.3149 val_identity_l1 0.0545 val_gate 0.510 val_score 0.3340
+epoch 3 train_l1 0.3852 val_l1 0.3150 val_identity_l1 0.0807 val_gate 0.533 val_score 0.3433
+epoch 4 train_l1 0.3784 val_l1 0.3133 val_identity_l1 0.0662 val_gate 0.531 val_score 0.3365
+epoch 5 train_l1 0.3764 val_l1 0.3178 val_identity_l1 0.0766 val_gate 0.538 val_score 0.3446
+epoch 6 train_l1 0.3733 val_l1 0.3150 val_identity_l1 0.0648 val_gate 0.546 val_score 0.3377
+epoch 7 train_l1 0.3767 val_l1 0.3110 val_identity_l1 0.0814 val_gate 0.541 val_score 0.3395
+epoch 8 train_l1 0.3804 val_l1 0.3165 val_identity_l1 0.0571 val_gate 0.540 val_score 0.3365
+epoch 9 train_l1 0.3699 val_l1 0.3130 val_identity_l1 0.0735 val_gate 0.458 val_score 0.3387
+epoch 10 train_l1 0.3687 val_l1 0.3116 val_identity_l1 0.0652 val_gate 0.237 val_score 0.3344
+epoch 11 train_l1 0.3617 val_l1 0.3137 val_identity_l1 0.1153 val_gate 0.222 val_score 0.3540
+epoch 12 train_l1 0.3725 val_l1 0.3229 val_identity_l1 0.1634 val_gate 0.215 val_score 0.3801
+epoch 13 train_l1 0.3690 val_l1 0.3189 val_identity_l1 0.0841 val_gate 0.141 val_score 0.3483
+epoch 14 train_l1 0.3616 val_l1 0.3123 val_identity_l1 0.1057 val_gate 0.176 val_score 0.3493
+epoch 15 train_l1 0.3607 val_l1 0.3189 val_identity_l1 0.1704 val_gate 0.238 val_score 0.3785
+epoch 16 train_l1 0.3590 val_l1 0.3327 val_identity_l1 0.1526 val_gate 0.308 val_score 0.3861
+epoch 17 train_l1 0.3561 val_l1 0.3307 val_identity_l1 0.1540 val_gate 0.286 val_score 0.3846
+epoch 18 train_l1 0.3561 val_l1 0.3078 val_identity_l1 0.0995 val_gate 0.183 val_score 0.3426
+epoch 19 train_l1 0.3506 val_l1 0.3105 val_identity_l1 0.0730 val_gate 0.130 val_score 0.3360
+epoch 20 train_l1 0.3453 val_l1 0.3336 val_identity_l1 0.1847 val_gate 0.247 val_score 0.3982
+epoch 21 train_l1 0.3519 val_l1 0.3030 val_identity_l1 0.1085 val_gate 0.172 val_score 0.3410
+epoch 22 train_l1 0.3566 val_l1 0.3108 val_identity_l1 0.0843 val_gate 0.149 val_score 0.3403
+epoch 23 train_l1 0.3573 val_l1 0.3108 val_identity_l1 0.0654 val_gate 0.107 val_score 0.3337
+epoch 24 train_l1 0.3483 val_l1 0.3086 val_identity_l1 0.1350 val_gate 0.163 val_score 0.3559
+epoch 25 train_l1 0.3471 val_l1 0.3098 val_identity_l1 0.0945 val_gate 0.123 val_score 0.3428
+epoch 26 train_l1 0.3420 val_l1 0.3125 val_identity_l1 0.0834 val_gate 0.129 val_score 0.3416
+epoch 27 train_l1 0.3437 val_l1 0.3102 val_identity_l1 0.0900 val_gate 0.107 val_score 0.3417
+epoch 28 train_l1 0.3551 val_l1 0.3070 val_identity_l1 0.0912 val_gate 0.150 val_score 0.3389
+epoch 29 train_l1 0.3389 val_l1 0.3018 val_identity_l1 0.1234 val_gate 0.159 val_score 0.3450
+epoch 30 train_l1 0.3363 val_l1 0.3030 val_identity_l1 0.1287 val_gate 0.157 val_score 0.3480
+epoch 31 train_l1 0.3331 val_l1 0.3009 val_identity_l1 0.1238 val_gate 0.152 val_score 0.3442
+epoch 32 train_l1 0.3323 val_l1 0.3001 val_identity_l1 0.1205 val_gate 0.139 val_score 0.3423
+epoch 33 train_l1 0.3342 val_l1 0.3018 val_identity_l1 0.1377 val_gate 0.164 val_score 0.3501
+epoch 34 train_l1 0.3383 val_l1 0.2974 val_identity_l1 0.1561 val_gate 0.170 val_score 0.3520
+epoch 35 train_l1 0.3320 val_l1 0.3010 val_identity_l1 0.0972 val_gate 0.126 val_score 0.3350
+epoch 36 train_l1 0.3275 val_l1 0.2960 val_identity_l1 0.1324 val_gate 0.157 val_score 0.3424
+epoch 37 train_l1 0.3272 val_l1 0.3030 val_identity_l1 0.1467 val_gate 0.156 val_score 0.3544
+epoch 38 train_l1 0.3275 val_l1 0.3006 val_identity_l1 0.1262 val_gate 0.155 val_score 0.3448
+epoch 39 train_l1 0.3277 val_l1 0.2972 val_identity_l1 0.1215 val_gate 0.155 val_score 0.3397
+epoch 40 train_l1 0.3258 val_l1 0.2964 val_identity_l1 0.1358 val_gate 0.154 val_score 0.3440
+done 2026-10-20T10:25:07+05:30

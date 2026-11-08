@@ -1,0 +1,78 @@
+{
+  "splits": {
+    "adapt": 1984,
+    "adapt_test": 2004,
+    "test": 951,
+    "train": 22358,
+    "validation": 2467
+  },
+  "by_condition": {
+    "adapt": {
+      "dysarthric": 1984
+    },
+    "adapt_test": {
+      "dysarthric": 2004
+    },
+    "test": {
+      "dysarthric": 951
+    },
+    "train": {
+      "dysarthric": 8342,
+      "control": 14016
+    },
+    "validation": {
+      "dysarthric": 911,
+      "control": 1556
+    }
+  },
+  "by_severity": {
+    "adapt": {
+      "severe": 35,
+      "mild": 56,
+      "moderate": 62,
+      "low": 372,
+      "very_low": 488,
+      "mid": 353,
+      "high": 618
+    },
+    "adapt_test": {
+      "severe": 35,
+      "mild": 81,
+      "moderate": 68,
+      "low": 363,
+      "very_low": 468,
+      "mid": 382,
+      "high": 607
+    },
+    "test": {
+      "moderate": 558,
+      "severe": 393
+    },
+    "train": {
+      "severe": 370,
+      "mild": 617,
+      "control": 14016,
+      "moderate": 689,
+      "low": 1345,
+      "very_low": 1754,
+      "mid": 1335,
+      "high": 2232
+    },
+    "validation": {
+      "severe": 50,
+      "mild": 74,
+      "control": 1556,
+      "moderate": 72,
+      "low": 134,
+      "very_low": 218,
+      "mid": 130,
+      "high": 233
+    }
+  },
+  "utterances": 29764,
+  "held_out_speakers": [
+    "torgo:F03",
+    "torgo:M02"
+  ],
+  "train_mic_policy": "Each train row is one utterance. Training draws one microphone from audio_paths. validation, test, adapt, and adapt_test use the canonical microphone in audio_path (TORGO wav_headMic, UA-Speech M5)."
+}

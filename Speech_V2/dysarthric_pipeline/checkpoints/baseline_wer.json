@@ -1,0 +1,108 @@
+{
+  "validation": {
+    "overall": {
+      "wer": 45.56,
+      "cer": 35.07,
+      "utterances": 2467
+    },
+    "by_severity": {
+      "control": {
+        "wer": 17.02,
+        "cer": 7.37,
+        "utterances": 1556
+      },
+      "high": {
+        "wer": 32.77,
+        "cer": 15.03,
+        "utterances": 233
+      },
+      "low": {
+        "wer": 197.81,
+        "cer": 111.17,
+        "utterances": 134
+      },
+      "mid": {
+        "wer": 130.83,
+        "cer": 100.72,
+        "utterances": 130
+      },
+      "mild": {
+        "wer": 59.56,
+        "cer": 41.32,
+        "utterances": 74
+      },
+      "moderate": {
+        "wer": 31.25,
+        "cer": 80.76,
+        "utterances": 72
+      },
+      "severe": {
+        "wer": 84.88,
+        "cer": 51.12,
+        "utterances": 50
+      },
+      "very_low": {
+        "wer": 216.67,
+        "cer": 224.49,
+        "utterances": 218
+      }
+    },
+    "by_corpus": {
+      "torgo": {
+        "wer": 20.78,
+        "cer": 16.56,
+        "utterances": 795
+      },
+      "uaspeech": {
+        "wer": 73.55,
+        "cer": 55.32,
+        "utterances": 1672
+      }
+    },
+    "by_condition": {
+      "control": {
+        "wer": 17.02,
+        "cer": 7.37,
+        "utterances": 1556
+      },
+      "dysarthric": {
+        "wer": 106.64,
+        "cer": 93.73,
+        "utterances": 911
+      }
+    }
+  },
+  "test": {
+    "overall": {
+      "wer": 50.02,
+      "cer": 35.57,
+      "utterances": 951
+    },
+    "by_severity": {
+      "moderate": {
+        "wer": 33.9,
+        "cer": 24.27,
+        "utterances": 558
+      },
+      "severe": {
+        "wer": 73.74,
+        "cer": 52.49,
+        "utterances": 393
+      }
+    },
+    "by_corpus": {
+      "torgo": {
+        "wer": 50.02,
+        "cer": 35.57,
+        "utterances": 951
+      }
+    },
+    "by_condition": {
+      "dysarthric": {
+        "wer": 50.02,
+        "cer": 35.57,
+        "utterances": 951
+      }
+    }
+  }
+}

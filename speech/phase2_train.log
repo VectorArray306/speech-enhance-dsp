@@ -1,0 +1,56 @@
+resume residual 2026-10-20T01:02:12+05:30
+train_rows=933 val_rows=519 residual=True max_frames=1600
+loaded speech/checkpoints_phase2_res/mel_mapper_best.pt (residual=True)
+epoch 1 train_l1 0.9060 val_l1 0.8202
+epoch 2 train_l1 0.8504 val_l1 0.8935
+epoch 3 train_l1 0.8489 val_l1 0.8668
+epoch 4 train_l1 0.8289 val_l1 0.7995
+epoch 5 train_l1 0.8161 val_l1 0.7314
+epoch 6 train_l1 0.7927 val_l1 0.8586
+epoch 7 train_l1 0.7874 val_l1 0.8607
+epoch 8 train_l1 0.8002 val_l1 0.7455
+epoch 9 train_l1 0.7846 val_l1 1.0297
+epoch 10 train_l1 0.7552 val_l1 0.7071
+epoch 11 train_l1 0.7579 val_l1 0.7789
+epoch 12 train_l1 0.7640 val_l1 0.7215
+epoch 13 train_l1 0.7605 val_l1 0.8411
+epoch 14 train_l1 0.7495 val_l1 0.8000
+epoch 15 train_l1 0.7421 val_l1 0.7690
+epoch 16 train_l1 0.7543 val_l1 0.7295
+epoch 17 train_l1 0.7879 val_l1 0.9492
+epoch 18 train_l1 0.8871 val_l1 0.8322
+epoch 19 train_l1 0.7863 val_l1 0.8702
+epoch 20 train_l1 0.7876 val_l1 0.8677
+epoch 21 train_l1 0.7813 val_l1 0.8183
+epoch 22 train_l1 0.7549 val_l1 0.8065
+epoch 23 train_l1 0.7557 val_l1 0.8940
+epoch 24 train_l1 0.7469 val_l1 0.9324
+epoch 25 train_l1 0.7652 val_l1 0.9217
+epoch 26 train_l1 0.7462 val_l1 0.7597
+epoch 27 train_l1 0.7465 val_l1 0.8901
+epoch 28 train_l1 0.7417 val_l1 0.8458
+epoch 29 train_l1 0.7388 val_l1 0.8186
+start direct 2026-10-20T01:05:40+05:30
+train_rows=933 val_rows=519 residual=False max_frames=1600
+loaded speech/checkpoints_phase1/mel_mapper_best.pt (residual=False)
+epoch 1 train_l1 0.8829 val_l1 0.5755
+epoch 2 train_l1 0.6108 val_l1 0.5670
+epoch 3 train_l1 0.5884 val_l1 0.5517
+epoch 4 train_l1 0.5714 val_l1 0.5726
+epoch 5 train_l1 0.5694 val_l1 0.5799
+epoch 6 train_l1 0.5574 val_l1 0.5253
+epoch 7 train_l1 0.5541 val_l1 0.5412
+epoch 8 train_l1 0.5411 val_l1 0.5656
+epoch 9 train_l1 0.5410 val_l1 0.6370
+epoch 10 train_l1 0.5313 val_l1 0.5443
+epoch 11 train_l1 0.5223 val_l1 0.5218
+epoch 12 train_l1 0.5215 val_l1 0.6092
+epoch 13 train_l1 0.5155 val_l1 0.5644
+epoch 14 train_l1 0.5096 val_l1 0.5588
+epoch 15 train_l1 0.5049 val_l1 0.5827
+epoch 16 train_l1 0.4936 val_l1 0.6078
+epoch 17 train_l1 0.5102 val_l1 0.5816
+epoch 18 train_l1 0.4915 val_l1 0.5651
+epoch 19 train_l1 0.4857 val_l1 0.6120
+epoch 20 train_l1 0.4780 val_l1 0.5734
+done 2026-10-20T01:07:52+05:30

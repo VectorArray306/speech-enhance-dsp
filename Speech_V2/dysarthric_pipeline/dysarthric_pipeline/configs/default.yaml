@@ -1,0 +1,107 @@
+# Phase 1 defaults. Later phases read this file; they do not invent a second config.
+
+audio:
+  sample_rate: 16000
+  channels: 1
+  sample_format: int16
+  highpass_hz: 80.0
+  frame_ms: 30
+  # Drop leading and trailing silence before the Whisper window.
+  trim_db: 30
+  trim_pad_ms: 200
+  # Bring quiet clips up to a common level before the Whisper window.
+  normalize_dbfs: -20.0
+  normalize_peak: 0.95
+
+vad:
+  backend: silero
+  threshold: 0.45
+  min_speech_ms: 250
+  # Spastic pauses inside a sentence are often longer than 700 ms.
+  min_silence_ms: 1100
+  speech_pad_ms: 350
+  max_utterance_s: 20.0
+
+serial:
+  # auto: COM port on Windows (USB serial from Device Manager), /dev/ttyACM0 on Linux.
+  port: auto
+  baud: 921600
+  # framed: 0xAA 0x55 | uint16le payload length | int16le PCM | uint16le CRC-16/CCITT-FALSE
+  # raw: uninterrupted 16 kHz mono int16 PCM
+  mode: framed
+  magic: [170, 85]
+  crc: crc16-ccitt-false
+
+asr:
+  base_model: openai/whisper-small.en
+  language: en
+  task: transcribe
+  lora_r: 32
+  lora_alpha: 64
+  lora_dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, out_proj, fc1, fc2]
+  adapter_dir: null
+
+train:
+  epochs: 4
+  batch_size: 4
+  grad_accum: 4
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  warmup_steps: 200
+  lr_schedule: cosine
+  min_lr_ratio: 0.1
+  # adapter_best is chosen on dysarthric validation WER, not the control-heavy overall score.
+  select_metric: dysarthric_wer
+  severity_weights:
+    control: 0.35
+    high: 1.0
+    mild: 1.2
+    mid: 1.5
+    moderate: 1.5
+    low: 2.0
+    severe: 2.5
+    very_low: 2.5
+  num_workers: 2
+  max_new_tokens: 36
+  num_beams: 1
+  eval_beams: 5
+  repetition_penalty: 1.15
+  no_repeat_ngram_size: 3
+  spec_augment: true
+
+adapt:
+  steps: 160
+  batch_size: 4
+  learning_rate: 0.00005
+  weight_decay: 0.01
+  warmup_steps: 20
+  min_lr_ratio: 0.1
+
+tts:
+  engine: piper
+  voice: en_US-lessac-medium
+  sample_rate: 22050
+
+paths:
+  data_root: ~/Downloads/dysarthric_speech
+  manifest_dir: manifests
+  checkpoint_dir: checkpoints
+  adapter_dir: adapters
+
+output:
+  mode: both
+
+splits:
+  # Corpus-qualified so TORGO F03 is not treated as UA-Speech F03.
+  # These speakers are the speaker-independent test set.
+  held_out_speakers:
+    - torgo:F03
+    - torgo:M02
+  validation_fraction: 0.1
+  # Share of each remaining dysarthric TORGO speaker held out for adaptation.
+  torgo_adapt_fraction: 0.15
+  # UA-Speech block B3 is the adaptation pool for dysarthric speakers.
+  # This fraction of that pool is calibration; the rest is adapt_test.
+  adaptation_train_fraction: 0.5
+  seed: 17

@@ -1,0 +1,527 @@
+{
+  "baseline": {
+    "validation": {
+      "overall": {
+        "wer": 45.56,
+        "cer": 35.07,
+        "utterances": 2467
+      },
+      "by_severity": {
+        "control": {
+          "wer": 17.02,
+          "cer": 7.37,
+          "utterances": 1556
+        },
+        "high": {
+          "wer": 32.77,
+          "cer": 15.03,
+          "utterances": 233
+        },
+        "low": {
+          "wer": 197.81,
+          "cer": 111.17,
+          "utterances": 134
+        },
+        "mid": {
+          "wer": 130.83,
+          "cer": 100.72,
+          "utterances": 130
+        },
+        "mild": {
+          "wer": 59.56,
+          "cer": 41.32,
+          "utterances": 74
+        },
+        "moderate": {
+          "wer": 31.25,
+          "cer": 80.76,
+          "utterances": 72
+        },
+        "severe": {
+          "wer": 84.88,
+          "cer": 51.12,
+          "utterances": 50
+        },
+        "very_low": {
+          "wer": 216.67,
+          "cer": 224.49,
+          "utterances": 218
+        }
+      },
+      "by_corpus": {
+        "torgo": {
+          "wer": 20.78,
+          "cer": 16.56,
+          "utterances": 795
+        },
+        "uaspeech": {
+          "wer": 73.55,
+          "cer": 55.32,
+          "utterances": 1672
+        }
+      },
+      "by_condition": {
+        "control": {
+          "wer": 17.02,
+          "cer": 7.37,
+          "utterances": 1556
+        },
+        "dysarthric": {
+          "wer": 106.64,
+          "cer": 93.73,
+          "utterances": 911
+        }
+      }
+    },
+    "test": {
+      "overall": {
+        "wer": 50.02,
+        "cer": 35.57,
+        "utterances": 951
+      },
+      "by_severity": {
+        "moderate": {
+          "wer": 33.9,
+          "cer": 24.27,
+          "utterances": 558
+        },
+        "severe": {
+          "wer": 73.74,
+          "cer": 52.49,
+          "utterances": 393
+        }
+      },
+      "by_corpus": {
+        "torgo": {
+          "wer": 50.02,
+          "cer": 35.57,
+          "utterances": 951
+        }
+      },
+      "by_condition": {
+        "dysarthric": {
+          "wer": 50.02,
+          "cer": 35.57,
+          "utterances": 951
+        }
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.828,
+      "validation": {
+        "overall": {
+          "wer": 15.06,
+          "cer": 10.83,
+          "utterances": 2467
+        },
+        "by_severity": {
+          "control": {
+            "wer": 6.05,
+            "cer": 2.85,
+            "utterances": 1556
+          },
+          "high": {
+            "wer": 5.88,
+            "cer": 2.8,
+            "utterances": 233
+          },
+          "low": {
+            "wer": 43.8,
+            "cer": 35.48,
+            "utterances": 134
+          },
+          "mid": {
+            "wer": 24.81,
+            "cer": 17.1,
+            "utterances": 130
+          },
+          "mild": {
+            "wer": 28.42,
+            "cer": 20.11,
+            "utterances": 74
+          },
+          "moderate": {
+            "wer": 20.0,
+            "cer": 13.63,
+            "utterances": 72
+          },
+          "severe": {
+            "wer": 43.02,
+            "cer": 28.04,
+            "utterances": 50
+          },
+          "very_low": {
+            "wer": 76.58,
+            "cer": 70.29,
+            "utterances": 218
+          }
+        },
+        "by_corpus": {
+          "torgo": {
+            "wer": 11.3,
+            "cer": 6.6,
+            "utterances": 795
+          },
+          "uaspeech": {
+            "wer": 19.31,
+            "cer": 15.46,
+            "utterances": 1672
+          }
+        },
+        "by_condition": {
+          "control": {
+            "wer": 6.05,
+            "cer": 2.85,
+            "utterances": 1556
+          },
+          "dysarthric": {
+            "wer": 34.34,
+            "cer": 27.73,
+            "utterances": 911
+          }
+        }
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3114,
+      "validation": {
+        "overall": {
+          "wer": 12.86,
+          "cer": 9.36,
+          "utterances": 2467
+        },
+        "by_severity": {
+          "control": {
+            "wer": 5.0,
+            "cer": 2.62,
+            "utterances": 1556
+          },
+          "high": {
+            "wer": 3.36,
+            "cer": 1.28,
+            "utterances": 233
+          },
+          "low": {
+            "wer": 30.66,
+            "cer": 24.57,
+            "utterances": 134
+          },
+          "mid": {
+            "wer": 16.54,
+            "cer": 10.2,
+            "utterances": 130
+          },
+          "mild": {
+            "wer": 28.42,
+            "cer": 21.1,
+            "utterances": 74
+          },
+          "moderate": {
+            "wer": 22.5,
+            "cer": 15.41,
+            "utterances": 72
+          },
+          "severe": {
+            "wer": 37.21,
+            "cer": 23.33,
+            "utterances": 50
+          },
+          "very_low": {
+            "wer": 68.47,
+            "cer": 61.87,
+            "utterances": 218
+          }
+        },
+        "by_corpus": {
+          "torgo": {
+            "wer": 11.04,
+            "cer": 6.81,
+            "utterances": 795
+          },
+          "uaspeech": {
+            "wer": 14.92,
+            "cer": 12.13,
+            "utterances": 1672
+          }
+        },
+        "by_condition": {
+          "control": {
+            "wer": 5.0,
+            "cer": 2.62,
+            "utterances": 1556
+          },
+          "dysarthric": {
+            "wer": 29.68,
+            "cer": 23.62,
+            "utterances": 911
+          }
+        }
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.2134,
+      "validation": {
+        "overall": {
+          "wer": 10.88,
+          "cer": 7.93,
+          "utterances": 2467
+        },
+        "by_severity": {
+          "control": {
+            "wer": 4.15,
+            "cer": 1.92,
+            "utterances": 1556
+          },
+          "high": {
+            "wer": 4.62,
+            "cer": 1.84,
+            "utterances": 233
+          },
+          "low": {
+            "wer": 27.01,
+            "cer": 23.52,
+            "utterances": 134
+          },
+          "mid": {
+            "wer": 12.03,
+            "cer": 7.61,
+            "utterances": 130
+          },
+          "mild": {
+            "wer": 26.23,
+            "cer": 21.54,
+            "utterances": 74
+          },
+          "moderate": {
+            "wer": 11.25,
+            "cer": 7.9,
+            "utterances": 72
+          },
+          "severe": {
+            "wer": 25.58,
+            "cer": 13.9,
+            "utterances": 50
+          },
+          "very_low": {
+            "wer": 63.51,
+            "cer": 56.31,
+            "utterances": 218
+          }
+        },
+        "by_corpus": {
+          "torgo": {
+            "wer": 8.08,
+            "cer": 4.95,
+            "utterances": 795
+          },
+          "uaspeech": {
+            "wer": 14.04,
+            "cer": 11.19,
+            "utterances": 1672
+          }
+        },
+        "by_condition": {
+          "control": {
+            "wer": 4.15,
+            "cer": 1.92,
+            "utterances": 1556
+          },
+          "dysarthric": {
+            "wer": 25.28,
+            "cer": 20.65,
+            "utterances": 911
+          }
+        }
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1616,
+      "validation": {
+        "overall": {
+          "wer": 10.28,
+          "cer": 7.27,
+          "utterances": 2467
+        },
+        "by_severity": {
+          "control": {
+            "wer": 3.99,
+            "cer": 1.87,
+            "utterances": 1556
+          },
+          "high": {
+            "wer": 2.94,
+            "cer": 0.88,
+            "utterances": 233
+          },
+          "low": {
+            "wer": 21.9,
+            "cer": 16.69,
+            "utterances": 134
+          },
+          "mid": {
+            "wer": 10.53,
+            "cer": 6.32,
+            "utterances": 130
+          },
+          "mild": {
+            "wer": 22.4,
+            "cer": 15.82,
+            "utterances": 74
+          },
+          "moderate": {
+            "wer": 17.5,
+            "cer": 11.97,
+            "utterances": 72
+          },
+          "severe": {
+            "wer": 20.93,
+            "cer": 11.17,
+            "utterances": 50
+          },
+          "very_low": {
+            "wer": 61.71,
+            "cer": 55.3,
+            "utterances": 218
+          }
+        },
+        "by_corpus": {
+          "torgo": {
+            "wer": 7.88,
+            "cer": 4.6,
+            "utterances": 795
+          },
+          "uaspeech": {
+            "wer": 12.99,
+            "cer": 10.2,
+            "utterances": 1672
+          }
+        },
+        "by_condition": {
+          "control": {
+            "wer": 3.99,
+            "cer": 1.87,
+            "utterances": 1556
+          },
+          "dysarthric": {
+            "wer": 23.73,
+            "cer": 18.72,
+            "utterances": 911
+          }
+        }
+      }
+    }
+  ],
+  "baseline_note": "Zero-shot score from the phase 3 run, before silence trimming.",
+  "validation_beam": {
+    "overall": {
+      "wer": 10.31,
+      "cer": 7.41,
+      "utterances": 2467
+    },
+    "by_severity": {
+      "control": {
+        "wer": 3.83,
+        "cer": 1.8,
+        "utterances": 1556
+      },
+      "high": {
+        "wer": 3.36,
+        "cer": 1.36,
+        "utterances": 233
+      },
+      "low": {
+        "wer": 21.9,
+        "cer": 17.08,
+        "utterances": 134
+      },
+      "mid": {
+        "wer": 12.03,
+        "cer": 7.18,
+        "utterances": 130
+      },
+      "mild": {
+        "wer": 23.5,
+        "cer": 17.36,
+        "utterances": 74
+      },
+      "moderate": {
+        "wer": 17.5,
+        "cer": 12.1,
+        "utterances": 72
+      },
+      "severe": {
+        "wer": 20.93,
+        "cer": 10.67,
+        "utterances": 50
+      },
+      "very_low": {
+        "wer": 61.71,
+        "cer": 55.72,
+        "utterances": 218
+      }
+    },
+    "by_corpus": {
+      "torgo": {
+        "wer": 7.82,
+        "cer": 4.66,
+        "utterances": 795
+      },
+      "uaspeech": {
+        "wer": 13.11,
+        "cer": 10.41,
+        "utterances": 1672
+      }
+    },
+    "by_condition": {
+      "control": {
+        "wer": 3.83,
+        "cer": 1.8,
+        "utterances": 1556
+      },
+      "dysarthric": {
+        "wer": 24.16,
+        "cer": 19.27,
+        "utterances": 911
+      }
+    }
+  },
+  "test": {
+    "overall": {
+      "wer": 22.77,
+      "cer": 14.21,
+      "utterances": 951
+    },
+    "by_severity": {
+      "moderate": {
+        "wer": 17.41,
+        "cer": 10.18,
+        "utterances": 558
+      },
+      "severe": {
+        "wer": 30.65,
+        "cer": 20.25,
+        "utterances": 393
+      }
+    },
+    "by_corpus": {
+      "torgo": {
+        "wer": 22.77,
+        "cer": 14.21,
+        "utterances": 951
+      }
+    },
+    "by_condition": {
+      "dysarthric": {
+        "wer": 22.77,
+        "cer": 14.21,
+        "utterances": 951
+      }
+    }
+  }
+}
