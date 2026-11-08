@@ -1,2 +1,0 @@
-train_rows=934 val_rows=521 residual=True
-epoch 1 train_l1 0.9553 val_l1 1.2323
